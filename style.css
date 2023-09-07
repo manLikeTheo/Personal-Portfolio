@@ -10,15 +10,22 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 48px;
+    font-size: 20px;
 }
 
 header {
     /* background: linear-gradient(175deg, #222935 65%, rgb(184, 210, 240) 25%); */
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     border: 2px solid black;
+    padding: 0 3rem;
+}
+
+.header-img{
+    position: relative;
 }
 
 .header-img img {
@@ -32,7 +39,7 @@ header {
     left: 30px;
     bottom: 20px;
     font-size: 1.5rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .header-about-me {
@@ -96,4 +103,36 @@ section.my-work {
 
 p.description {
     padding: 0.5rem 1rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #222935;
+    justify-content: space-between;
+    gap: 3rem;
+    box-shadow: 0 0 0 100vmax black;
+    clip-path: inset(0 -100vmax);
+    padding: 3rem 1rem;
+}
+
+footer .contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1.5rem;
+}
+
+footer .contact-me *{
+    color: rgb(184, 210, 240);
+}
+
+footer .contact-me .links *{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+footer img {
+    max-width: 500px;
+    border-radius: 7px;
 }
