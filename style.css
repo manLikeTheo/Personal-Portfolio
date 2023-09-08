@@ -54,14 +54,29 @@ header {
 
 .header-about-me .icons {
     display: inherit;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 1.5rem;
     justify-content: flex-end;
 }
 
 .icons a {
     text-decoration: none;
+    /* border: 2px solid blue; */
 }
+
+.icons > a:hover {
+    transform: scale(1.2);
+}
+
+.icons > a img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    max-width: 30px;
+}
+
 
 /* My work Section */
 section.my-work {
@@ -100,6 +115,13 @@ section.my-work {
     padding: 0.5rem 1rem;
 }
 
+.title-icons .name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
 
 p.description {
     padding: 0.5rem 1rem;
@@ -127,9 +149,16 @@ footer .contact-me *{
     color: rgb(184, 210, 240);
 }
 
+
 footer .contact-me .links *{
     text-decoration: none;
     padding: 1rem;
+}
+
+div.links > a img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
 }
 
 footer img {
