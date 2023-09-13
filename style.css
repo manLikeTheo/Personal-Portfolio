@@ -265,6 +265,10 @@ footer img {
     }
 
     /* My Work Tablet */
+    .my-work .work-heading {
+        font-size: 2rem;
+    }
+
     .work-container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
